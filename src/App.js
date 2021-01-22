@@ -1,9 +1,7 @@
 import React, { Component, Suspense } from "react";
-
-import logo from "./logo.svg";
+import { Link } from "react-router-dom";
 import "./App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { lazy } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./components/Routes";
 
 class App extends Component {
@@ -14,23 +12,19 @@ class App extends Component {
           <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
             <header className="mdl-layout__header">
               <div className="mdl-layout__header-row">
-                <span className="mdl-layout-title">Lottry App</span>
+                <Link to="/">
+                  {" "}
+                  <span className="mdl-layout-title">Lottry App</span>
+                </Link>
                 <div className="mdl-layout-spacer"></div>
                 <nav className="mdl-navigation mdl-layout--large-screen-only">
-                  {/* <a className="mdl-navigation__link" href="">
-                  Link
-                </a> */}
+                  <Link className="mdl-navigation__link" to="/">
+                    Home
+                  </Link>
                 </nav>
               </div>
             </header>
-            <div className="mdl-layout__drawer">
-              <span className="mdl-layout-title">Lottry APP</span>
-              <nav className="mdl-navigation">
-                {/* <a className="mdl-navigation__link" href="">
-                Link
-              </a> */}
-              </nav>
-            </div>
+
             <main className="mdl-layout__content">
               <div className="page-content">
                 <Suspense fallback={<div></div>}>

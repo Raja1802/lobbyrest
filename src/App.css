@@ -16,3 +16,34 @@
   background-color: #ffffff29;
   border-radius: 5px;
 }
+.demo-list-two {
+  width: 300px;
+}
+.room_name_css {
+  font-size: 24px;
+  margin: 0px;
+  padding: 10px;
+  text-transform: capitalize;
+  margin: 5px;
+  cursor: pointer;
+}
+.name_user {
+  color: green;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.gift_recived {
+  color: red;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.romm_created {
+  padding: 0px 5px 0px 20px;
+  color: #dedede;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
